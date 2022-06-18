@@ -1,6 +1,6 @@
 {
   "name": "@amaui/node",
-  "version": "1.0.1111",
+  "version": "1.0.11111",
   "description": "Nodejs utils",
   "repository": "https://github.com/amaui-org/amaui-node.git",
   "author": "Lazar <lazareric.com@gmail.com>",
@@ -34,7 +34,7 @@
   },
   "devDependencies": {
     "@amaui/models": "^1.0.1",
-    "@amaui/test": "^1.0.1114",
+    "@amaui/test": "^1.0.1141",
     "@amaui/utils": "^1.0.1874",
     "@babel/cli": "^7.16.0",
     "@babel/core": "^7.16.0",
