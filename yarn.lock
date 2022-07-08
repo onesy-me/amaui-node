@@ -123,6 +123,16 @@
     path-to-regexp "^6.2.0"
     uuid "^8.3.2"
 
+"@amaui/utils@^1.0.11117":
+  version "1.0.11117"
+  resolved "https://registry.yarnpkg.com/@amaui/utils/-/utils-1.0.11117.tgz#1a23595c601dd73695013bbb2c954a8737f4245a"
+  integrity sha512-tXSM78wq4WBCNuZskPhWCidmvzNmz7AWi7cSE3s9NnBbRMPYJX2y8ahuugSjmVkZ8jXDShL5ziGGucoYCSkB0w==
+  dependencies:
+    "@babel/runtime" "^7.18.3"
+    crypto-js "^4.1.1"
+    path-to-regexp "^6.2.0"
+    uuid "^8.3.2"
+
 "@amaui/utils@^1.0.113":
   version "1.0.114"
   resolved "https://registry.yarnpkg.com/@amaui/utils/-/utils-1.0.114.tgz#bb6ad8b9915f8dcb8f8c93c0bdaf1598c2885880"
