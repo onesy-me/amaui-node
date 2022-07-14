@@ -1,3 +1,1 @@
-import { default as AmauiNode } from './amaui-node';
-
-export default AmauiNode;
+export { default } from './amaui-node';
