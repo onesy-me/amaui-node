@@ -1,1 +1,1 @@
-export { default } from './amaui-node';
+export { default } from './AmauiNode';
