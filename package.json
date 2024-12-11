@@ -2,7 +2,7 @@
   "name": "@onesy/node",
   "version": "1.0.0",
   "description": "Nodejs utils",
-  "repository": "https://github.com/onesy-org/onesy-node.git",
+  "repository": "https://github.com/onesy-me/node.git",
   "author": "Lazar <lazareric2@gmail.com>",
   "license": "MIT",
   "private": false,
