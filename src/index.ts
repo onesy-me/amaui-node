@@ -1,1 +1,1 @@
-export { default } from './AmauiNode';
+export { default } from './OnesyNode';

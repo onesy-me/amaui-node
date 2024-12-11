@@ -2,16 +2,16 @@
 import fs from 'fs';
 import path from 'path';
 
-import { assert } from '@amaui/test';
+import { assert } from '@onesy/test';
 
-import AmauiNode from '../src';
+import OnesyNode from '../src';
 
-group('AmauiNode', () => {
+group('OnesyNode', () => {
 
   group('file', () => {
 
     to('file', () => {
-      const methods = AmauiNode.file;
+      const methods = OnesyNode.file;
 
       assert(methods.add).a('function');
       assert(methods.get).a('function');
@@ -19,33 +19,33 @@ group('AmauiNode', () => {
     });
 
     to('add', async () => {
-      assert(await AmauiNode.file.add(path.resolve('a.txt'), 'a')).eq(true);
+      assert(await OnesyNode.file.add(path.resolve('a.txt'), 'a')).eq(true);
 
       assert(fs.readFileSync(path.resolve('a.txt'))).exist;
     });
 
     to('update', async () => {
-      await AmauiNode.file.add(path.resolve('a.txt'), 'a');
+      await OnesyNode.file.add(path.resolve('a.txt'), 'a');
 
-      await AmauiNode.file.update(path.resolve('a.txt'), 'ad');
+      await OnesyNode.file.update(path.resolve('a.txt'), 'ad');
 
-      assert(await AmauiNode.file.get(path.resolve('a.txt'), false)).eq('ad');
+      assert(await OnesyNode.file.get(path.resolve('a.txt'), false)).eq('ad');
     });
 
     group('get', () => {
 
-      pre(async () => await AmauiNode.file.add(path.resolve('a.txt'), 'a'));
+      pre(async () => await OnesyNode.file.add(path.resolve('a.txt'), 'a'));
 
-      post(async () => await AmauiNode.file.remove(path.resolve('a.txt')));
+      post(async () => await OnesyNode.file.remove(path.resolve('a.txt')));
 
       to('native', async () => {
-        const data = await AmauiNode.file.get(path.resolve('a.txt'), true);
+        const data = await OnesyNode.file.get(path.resolve('a.txt'), true);
 
         assert(data.toString('utf-8')).eq('a');
       });
 
       to('string', async () => {
-        const data = await AmauiNode.file.get(path.resolve('a.txt'), false);
+        const data = await OnesyNode.file.get(path.resolve('a.txt'), false);
 
         assert(data.toString('utf-8')).eq('a');
       });
@@ -53,9 +53,9 @@ group('AmauiNode', () => {
     });
 
     to('remove', async () => {
-      await AmauiNode.file.add(path.resolve('a.txt'), 'a');
+      await OnesyNode.file.add(path.resolve('a.txt'), 'a');
 
-      assert(await AmauiNode.file.remove(path.resolve('a.txt'))).eq(true);
+      assert(await OnesyNode.file.remove(path.resolve('a.txt'))).eq(true);
 
       try {
         fs.readFileSync(path.resolve('a.txt'));

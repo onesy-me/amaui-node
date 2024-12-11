@@ -4,11 +4,11 @@
 
 <p align='center'>
   <a target='_blank' rel='noopener noreferrer' href='#'>
-    <img src='utils/images/logo.svg' alt='amaui logo' />
+    <img src='utils/images/logo.svg' alt='onesy logo' />
   </a>
 </p>
 
-<h1 align='center'>amaui Node</h1>
+<h1 align='center'>onesy Node</h1>
 
 <p align='center'>
   Node
@@ -38,7 +38,7 @@
 ### Add
 
 ```sh
-yarn add @amaui/node
+yarn add @onesy/node
 ```
 
 ### Use
@@ -46,16 +46,16 @@ yarn add @amaui/node
 ```javascript
   import path from 'path';
 
-  import AmauiNode from '@amaui/node';
+  import OnesyNode from '@onesy/node';
 
   // A file add
-  await AmauiNode.file.add(path.resolve('a.json'), 'a');
+  await OnesyNode.file.add(path.resolve('a.json'), 'a');
 
   // A file read
-  await AmauiNode.file.get(path.resolve('a.json'));
+  await OnesyNode.file.get(path.resolve('a.json'));
 
   // A file remove
-  await AmauiNode.file.remove(path.resolve('a.json'));
+  await OnesyNode.file.remove(path.resolve('a.json'));
 ```
 
 ### Dev

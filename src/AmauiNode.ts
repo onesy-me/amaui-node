@@ -7,7 +7,7 @@ export interface IFile {
   remove(path: string): Promise<boolean>;
 }
 
-class AmauiNode {
+class OnesyNode {
 
   public static get file(): IFile {
     const add = (name: string, data: any): Promise<boolean> => {
@@ -50,4 +50,4 @@ class AmauiNode {
 
 }
 
-export default AmauiNode;
+export default OnesyNode;
